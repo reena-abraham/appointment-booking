@@ -130,7 +130,7 @@
                                 🧑‍⚕️ <span class="font-medium">Doctor:</span> <?php echo CHtml::encode($appointment->staff->user->name); ?>
                             </p>
                         </div>
-                        <div class="mt-4 sm:mt-0">
+                        <div class="mt-4 sm:mt-0" style="display: none;">
                             <a href="#" class="inline-block px-4 py-2 text-sm text-indigo-700 border border-indigo-600 hover:bg-indigo-50 rounded-md transition">
                                 View Details
                             </a>
@@ -253,7 +253,7 @@
                             </p>
                         </div>
                         <!-- Optional Action Button -->
-                        <div class="mt-4 sm:mt-0">
+                        <div class="mt-4 sm:mt-0" style="display: none;">
                             <a href="#" class="inline-block px-4 py-2 text-sm text-gray-600 bg-gray-200 hover:bg-gray-300 rounded-md">
                                 View Details
                             </a>

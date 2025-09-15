@@ -176,7 +176,7 @@ class SiteController extends Controller
 		$criteriaUpcoming = new CDbCriteria();
 		$criteriaUpcoming->condition = 'user_id = :uid AND appointment_date >= CURDATE()';
 		$criteriaUpcoming->params = [':uid' => $userId];
-		$criteriaUpcoming->order = 'appointment_date ASC';
+		$criteriaUpcoming->order = 'appointment_date DESC';
 
 		$criteriaPast = new CDbCriteria();
 		$criteriaPast->condition = 'user_id = :uid AND appointment_date < CURDATE()';
@@ -191,6 +191,56 @@ class SiteController extends Controller
 			'pastAppointments' => $pastAppointments,
 		]);
 	}
+
+	public function actionUploadPhoto()
+{
+    $userId = Yii::app()->user->id;
+    $model = User::model()->findByPk($userId); // ✅ Corrected to use User model
+
+    if (!$model) {
+        throw new CHttpException(404, 'User not found.');
+    }
+
+    if (isset($_FILES['profile_picture_file']) && $_FILES['profile_picture_file']['error'] == 0) {
+        $file = $_FILES['profile_picture_file'];
+
+        // Optional: Restrict allowed extensions
+        $allowedTypes = ['jpg', 'jpeg', 'png', 'gif'];
+        $ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
+
+        if (!in_array($ext, $allowedTypes)) {
+            Yii::app()->user->setFlash('error', 'Only JPG, PNG, and GIF images are allowed.');
+            return $this->redirect(['site/profile']);
+        }
+
+        $uploadDir = Yii::getPathOfAlias('webroot') . '/uploads/user/';
+        if (!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0755, true);
+        }
+
+        $fileName = 'user_' . $userId . '_' . time() . '.' . $ext;
+        $filePath = $uploadDir . $fileName;
+
+        if (move_uploaded_file($file['tmp_name'], $filePath)) {
+            // Save only the filename in DB
+            $model->profile_picture = $fileName;
+
+            if ($model->save(false)) {
+                Yii::app()->user->setFlash('success', 'Profile picture updated successfully.');
+            } else {
+                Yii::app()->user->setFlash('error', 'Failed to save profile picture to database.');
+            }
+        } else {
+            Yii::app()->user->setFlash('error', 'Failed to upload the file.');
+        }
+    } else {
+        Yii::app()->user->setFlash('error', 'No file uploaded.');
+    }
+
+    $this->redirect(['site/profile']);
+}
+
+
 
 
 	/**

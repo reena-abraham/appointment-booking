@@ -29,10 +29,16 @@
 					<?php $user = User::model()->findByPk(Yii::app()->user->id); ?>
 					<div class="relative ml-3">
 						<button type="button" class="flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-600" id="user-menu-button" onclick="toggleUserMenu()">
+						  <?php if (!empty($user->profile_picture)): ?>
 						<img class="w-24 h-24 rounded-full object-cover border"
-								src="<?php echo Yii::app()->baseUrl . '/images/user.png'; ?>"
+								   src="<?php echo Yii::app()->baseUrl . '/uploads/user/' . CHtml::encode($user->profile_picture); ?>"
 								alt="Profile" style="width: 45px !important; height: 45px !important;max-width: 100%; height: auto;">	
-						<!-- <img class="w-24 h-24 rounded-full object-cover border"
+						  <?php else: ?>
+							<img class="w-24 h-24 rounded-full object-cover border"
+								  src="<?php echo Yii::app()->baseUrl . '/images/user.png'; ?>"
+								alt="Profile" style="width: 45px !important; height: 45px !important;max-width: 100%; height: auto;">	
+							 <?php endif; ?>
+								<!-- <img class="w-24 h-24 rounded-full object-cover border"
 								src="<?php echo Yii::app()->createUrl('site/profilePicture', array('id' => $user->id)); ?>"
 								alt="Profile" style="width: 45px !important; height: 45px !important;max-width: 100%; height: auto;"> -->
 

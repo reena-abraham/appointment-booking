@@ -153,3 +153,147 @@ Stack trace:
 REQUEST_URI=/appointment-booking/site/profilePicture/5
 HTTP_REFERER=http://localhost/appointment-booking/site/profile
 ---
+2025/09/14 20:47:42 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 20:48:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 20:48:51 [error] [php] Creating default object from empty value (C:\xampp\htdocs\appointment-booking\protected\controllers\SiteController.php:215)
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\yii-sample\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\appointment-booking\index.php(13): CWebApplication->run()
+REQUEST_URI=/appointment-booking/site/uploadPhoto
+in C:\xampp\htdocs\appointment-booking\protected\controllers\SiteController.php (215)
+in C:\xampp\htdocs\appointment-booking\index.php (13)
+2025/09/14 20:51:23 [error] [php] Attempt to assign property 'profile_picture' of non-object (C:\xampp\htdocs\appointment-booking\protected\controllers\SiteController.php:215)
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\yii-sample\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\appointment-booking\index.php(13): CWebApplication->run()
+REQUEST_URI=/appointment-booking/site/uploadPhoto
+in C:\xampp\htdocs\appointment-booking\protected\controllers\SiteController.php (215)
+in C:\xampp\htdocs\appointment-booking\index.php (13)
+2025/09/14 20:55:24 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 20:55:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 20:58:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 20:59:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 20:59:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "profilePicture". in C:\xampp\htdocs\yii-sample\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CController.php(270): CController->missingAction('profilePicture')
+#1 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(282): CController->run('profilePicture')
+#2 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('site/profilePic...')
+#3 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/appointment-booking/site/profilePicture/5
+HTTP_REFERER=http://localhost/appointment-booking/site/profile
+---
+2025/09/14 21:04:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/user/images/user.png". in C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/user/im...')
+#1 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appointment-booking/uploads/user/images/user.png
+HTTP_REFERER=http://localhost/appointment-booking/
+---
+2025/09/14 21:04:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/user/images/user.png". in C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/user/im...')
+#1 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appointment-booking/uploads/user/images/user.png
+HTTP_REFERER=http://localhost/appointment-booking/
+---
+2025/09/14 21:06:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/user/images/user.png". in C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/user/im...')
+#1 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appointment-booking/uploads/user/images/user.png
+HTTP_REFERER=http://localhost/appointment-booking/
+---
+2025/09/14 21:06:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/user/images/user.png". in C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/user/im...')
+#1 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appointment-booking/uploads/user/images/user.png
+HTTP_REFERER=http://localhost/appointment-booking/
+---
+2025/09/14 21:09:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "uploads/user/images/user.png". in C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-sample\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/user/im...')
+#1 C:\xampp\htdocs\yii-sample\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\appointment-booking\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/appointment-booking/uploads/user/images/user.png
+HTTP_REFERER=http://localhost/appointment-booking/
+---
